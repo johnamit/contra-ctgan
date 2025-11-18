@@ -1,0 +1,1 @@
+Generated plots are stored in Google Drive and ignored by Git.

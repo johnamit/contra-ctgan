@@ -1,0 +1,1 @@
+Synthetic outputs are stored in Google Drive and ignored by Git.

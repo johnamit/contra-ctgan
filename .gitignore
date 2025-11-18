@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.dylib
+*.egg-info/
+*.dist-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# Virtual envs
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+.ipython/
+profile_default/
+
+# IDE/editor
+.vscode/
+*.code-workspace
+
+# Logs / cache / temp
+*.log
+logs/
+*.tmp
+tmp/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project artifacts kept outside the repo (use Google Drive)
+# Ignore contents but keep the directory and its README
+Datasets/**
+!Datasets/
+!Datasets/README.md
+
+SyntheticDatasets/**
+!SyntheticDatasets/
+!SyntheticDatasets/README.md
+
+Plots/**
+!Plots/
+!Plots/README.md
+
+# Note: DO NOT ignore model weights; they are tracked via Git LFS
+# (so no ignore patterns for *.pth / *.pt / *.ckpt)
