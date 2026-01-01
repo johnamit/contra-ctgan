@@ -9,6 +9,8 @@ ContraCTGAN
 
 A tabular data generation framework that integrates SimCLR-style contrastive loss into CTGAN to generate realistic, privacy-preserving credit card transaction data. By enhancing the discriminator with an auxiliary contrastive task, ContraCTGAN better preserves inter-feature dependencies and marginal distributions in highly imbalanced datasets.
 
+<br>
+
 ## Overview
 
 This project enhances the standard CTGAN architecture by introducing a contrastive branch to the discriminator:
@@ -109,8 +111,8 @@ You can modify the training parameters within the script constructors. Key argum
 
 | Argument | Type | Default | Description |
 | --- | --- | --- | --- |
-| `contrastive_lambda` () | float | `0.5` | Weight of the NT-Xent contrastive loss |
-| `contrastive_temperature` () | float | `0.5` | Temperature parameter for contrastive scaling |
+| `contrastive_lambda` | float | `0.5` | Weight of the NT-Xent contrastive loss |
+| `contrastive_temperature` | float | `0.5` | Temperature parameter for contrastive scaling |
 | `epochs` | int | `100` | Number of training epochs |
 | `batch_size` | int | `500` | Batch size for training |
 | `use_amp` | bool | `True` | Enable Automatic Mixed Precision |
