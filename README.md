@@ -1,11 +1,11 @@
-<h1>
-ContraCTGAN
-<a href="[https://drive.google.com/file/d/1ab02W1ty949CBcTFcbvVeddcFmWR3-iL/view?usp=drive_link](https://drive.google.com/file/d/17HE3AtMUaq8K_VrRJRbNasXjsSph8V9S/view?usp=drive_link)">
-<img align="right"
+<img src="assets/contra-ctgan.png" alt="ContraCTGAN" width="900"><br>
+  <a href="https://drive.google.com/file/d/17HE3AtMUaq8K_VrRJRbNasXjsSph8V9S/view?usp=drive_link">
+    <img
       src="https://img.shields.io/badge/Read%20Paper-PDF-black?style=for-the-badge&labelColor=0057FF&logo=adobeacrobat&logoColor=white"
-      alt="Read Paper"/>
-</a>
-</h1>
+      alt="Read Paper"
+    />
+  </a>
+
 
 A tabular data generation framework that integrates SimCLR-style contrastive loss into CTGAN to generate realistic, privacy-preserving credit card transaction data. By enhancing the discriminator with an auxiliary contrastive task, ContraCTGAN better preserves inter-feature dependencies and marginal distributions in highly imbalanced datasets.
 
