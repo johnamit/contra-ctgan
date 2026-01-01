@@ -9,7 +9,6 @@ ContraCTGAN
 
 A tabular data generation framework that integrates SimCLR-style contrastive loss into CTGAN to generate realistic, privacy-preserving credit card transaction data. By enhancing the discriminator with an auxiliary contrastive task, ContraCTGAN better preserves inter-feature dependencies and marginal distributions in highly imbalanced datasets.
 
-<br>
 
 ## Overview
 
@@ -23,7 +22,9 @@ This project enhances the standard CTGAN architecture by introducing a contrasti
 
 The model minimizes the following objective:
 
-<br>
+$$\mathcal{L}_D^{\text{total}} = \mathcal{L}_D^{\text{WGAN-GP}} + \lambda_{\text{contrastive}} \cdot \mathcal{L}_{\text{NT-Xent}}$$
+
+
 
 ## Prerequisites
 
@@ -33,7 +34,7 @@ The model minimizes the following objective:
 
 **Tested on:** NVIDIA RTX 3090 (24GB) • Ryzen 7 7800X3D • 32GB RAM
 
-<br>
+
 
 ## Project Structure
 
@@ -53,7 +54,7 @@ ContraCTGAN/
 
 ```
 
-<br>
+
 
 ## Installation
 
@@ -84,7 +85,7 @@ Datasets/
 
 
 
-<br>
+
 
 ## Usage
 
@@ -117,7 +118,7 @@ You can modify the training parameters within the script constructors. Key argum
 | `batch_size` | int | `500` | Batch size for training |
 | `use_amp` | bool | `True` | Enable Automatic Mixed Precision |
 
-<br>
+
 
 ## Results
 
@@ -143,7 +144,7 @@ Comparison of ContraCTGAN variants against baseline CTGAN and TVAE on the Credit
 * **Utility Boost:** The highlighted ContraCTGAN configuration () more than doubles the F1 score compared to the baseline CTGAN (0.2883 vs 0.1392), indicating significantly better capture of the minority fraud class.
 * **Fidelity:** ContraCTGAN generally reduces Wasserstein Distance and L2 Pearson distance, preserving marginal distributions and correlations better than the baseline.
 
-<br>
+
 
 ## Citation
 
@@ -159,7 +160,7 @@ If you use this code in your research, please cite:
 
 ```
 
-<br>
+
 
 ## License
 
